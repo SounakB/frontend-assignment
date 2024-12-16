@@ -1,0 +1,16 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    border-radius: 0;
+    margin: 5px;
+}
+
+.pagination input {
+    height: 30px;
+    font-size: 16px;
+}
