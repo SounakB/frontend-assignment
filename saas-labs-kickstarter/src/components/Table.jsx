@@ -13,7 +13,8 @@ export default function Table ({ fields = {}, data = [], perPageLimit = 5 }) {
 	};
 
 	const [currentPageData, setCurrentPageData] = useState(() =>
-		data.slice(0, perPageLimit)
+		data.slice((currentPage - 1) * perPageLimit,
+			currentPage * perPageLimit)
 	);
 
 	useEffect(() => {
